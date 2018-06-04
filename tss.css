@@ -1,0 +1,157 @@
+@import url(https://zavoloklom.github.io/material-design-iconic-font/css/docs.md-iconic-font.min.css);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+  background: orange;
+  text-align: center;
+}
+.ocard {
+  height: 400px;
+  width: 300px;
+  background: #fff;
+  font-family: Roboto;
+  display: block;
+  position: relative;
+  top: 150px;    
+  margin: 50px auto;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s ease-in-out;
+}
+.ocard:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.oheader {
+  display: block;
+  position: relative;
+  top: 20px;
+  font-size: 2.5em;
+  color: black;
+}
+.ofield {
+  display: block;
+  width: 80%;
+  margin: 1px auto;
+  top: 0px;
+  height: 400px;
+  position: relative;
+}
+.oform-group {
+  position: relative;
+  top: 25px;    
+  margin: 20px auto;
+  text-align: left;
+}
+
+.oform-group input {
+  height: 38px;
+}
+
+.oform-group .ocontrol-label {
+  position: absolute;
+  top: 0.8rem;
+  float: left;
+  pointer-events: none;
+  z-index: 1;
+  color: #9e9e9e;
+  font-size: 1.95rem;
+  font-weight: normal;
+  -webkit-transition: all 0.28s ease;
+  transition: all 0.28s ease;
+}
+
+.oform-group .obar {
+  position: relative;
+  border-bottom: 0.0885rem solid #9e9e9e;
+  display: block;
+}
+
+
+.oform-group .obar::before {
+  content: '';
+  height: 0.1rem;
+  width: 0;
+  left: 50%;
+  bottom: -0.0625rem;
+  position: absolute;
+  background: #ff9800;
+  -webkit-transition: left 0.28s ease, width 0.28s ease;
+  transition: left 0.28s ease, width 0.28s ease;
+  z-index: 2;
+}
+
+ .oform-group .obar::before {
+  background: #fff;
+}
+.oform-group input {
+  display: block;
+  background: none;
+  padding: 0.125rem 0.125rem 0.0625rem;
+  font-size: 2rem;
+  border-width: 0;
+  border-color: transparent;
+  line-height: 1.9;
+  width: 100%;
+  color: transparent;
+  -webkit-transition: all 0.28s ease;
+  transition: all 0.28s ease;
+  box-shadow: none;
+}
+
+.oform-group input[type="file"] {
+  line-height: 1;
+}
+
+.oform-group input[type="file"] ~ .obar {
+  display: none;
+}
+
+.oform-group input:focus,
+.oform-group input:valid,
+.oform-group input.form-file,
+.oform-group input.has-value {
+  color: #333;
+}
+.oform-group input:focus ~ .ocontrol-label,
+.oform-group input:valid ~ .ocontrol-label,
+.oform-group input.form-file ~ .ocontrol-label,
+.oform-group input.has-value ~ .ocontrol-label {
+  font-size: 1.5rem;
+  color: gray;
+  top: -1rem;
+  left: 0;
+}
+
+.oform-group input:focus {
+  outline: none;
+}
+
+.oform-group input:focus ~ .ocontrol-label {
+  color: #ff9800;
+}
+
+
+.oform-group input:focus ~ .obar::before {
+  width: 100%;
+  left: 0;
+}
+ 
+ .obutton {
+  position: relative;
+  bottom: -8px;
+  background: #ff9800;
+  border: 1px solid #ff9800;
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 3rem 0;
+  padding: 0.75rem 3rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.obutton:hover {
+  color: #337ab7;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
