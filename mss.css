@@ -1,0 +1,16 @@
+body {
+	
+    margin: 0 auto;
+	background: orange;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+}
+
+.navbar{
+    height: 80px;
+    font-size: 1.4em;
+    
+}
+.navbar-brand{
+    font-size: 1.4em;
+}
